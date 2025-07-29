@@ -4,36 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Записаться на прием к врачу</title>
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
   <body>
-    <h1>Запись к врачу</h1>
+    <%- include('components/header') %>
+    <div class="container">
+      <h1>Запись к врачу</h1>
 
-    <div class="record">
-      <form action="/" class="record__form" method="post">
-        <div class="record__item">
-          <span class="record__lable">ФИО</span>
-          <input type="text" name="name" placeholder="Наше имя и фамилия" />
-        </div>
-        <div class="record__item">
-          <span class="record__lable">Номер телефона</span>
-          <input
-            type="text"
-            name="name"
-            placeholder="+7 (000) 000 00 00"
-            required
-          />
-        </div>
-        <div class="record__item">
-          <span class="record__lable">Опишите вашу проблему</span>
-          <textarea
-            name="message"
-            placeholder="Расскажите о своей проблеме..."
-          ></textarea>
-        </div>
-        <button class="record__button" type="submit" disabled="">
-          Отправить
-        </button>
-      </form>
+      <div class="record">
+        <form action="/" class="record__form" method="post">
+          <div class="record__item">
+            <span class="record__lable">ФИО</span>
+            <input type="text" name="name" placeholder="Наше имя и фамилия" />
+          </div>
+          <div class="record__item">
+            <span class="record__lable">Номер телефона</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="+7 (000) 000 00 00"
+              required
+            />
+          </div>
+          <div class="record__item">
+            <span class="record__lable">Опишите вашу проблему</span>
+            <textarea
+              name="message"
+              placeholder="Расскажите о своей проблеме..."
+            ></textarea>
+          </div>
+          <button class="record__button" type="submit" disabled="">
+            Отправить
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
