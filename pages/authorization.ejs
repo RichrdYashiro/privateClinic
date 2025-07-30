@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вход на сайт</title>
+    <link rel="stylesheet" href="/css/custom.css" />
   </head>
   <body>
-    <div class="login">
-      <h1 class="login__title">Авторизация</h1>
-      <form class="login__form" action="/" method="post">
-        <div class="login__item">
-          <span class="login__sub-title">Электронная почта</span>
-          <input class="login__input" name="email" type="email" required />
-        </div>
-        <div class="login__item">
-          <span class="login__sub-title">Пароль</span>
-          <input class="login__input" name="email" type="password" required />
-        </div>
-        <button class="record__button" type="submit" disabled="">
-          Отправить
-        </button>
-      </form>
+    <%- include('components/header') %>
+
+    <div class="container">
+      <div class="login">
+        <h1 class="login__title">Авторизация</h1>
+        <form class="login__form" action="/" method="POST">
+          <div class="login__item">
+            <span class="login__sub-title">Электронная почта</span>
+            <input class="login__input" name="email" type="email" required />
+          </div>
+          <div class="login__item">
+            <span class="login__sub-title">Пароль</span>
+            <input
+              class="login__input"
+              name="password"
+              type="password"
+              required
+            />
+          </div>
+          <button class="record__button" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

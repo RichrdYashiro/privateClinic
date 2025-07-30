@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: #f8f9fa;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+header {
+  background: #1a202c;
+  color: white;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 0 2rem;
+}
+
+header a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+header a:hover {
+  color: #63b3ed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 1.8rem;
+}
+
+.record,
+.login {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.record__form,
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.record__item,
+.login__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.record__lable,
+.login__sub-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.record__form input,
+.record__form textarea,
+.login__form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  background: #f8f9fa;
+}
+
+.record__form input:focus,
+.record__form textarea:focus,
+.login__form input:focus {
+  outline: none;
+  border-color: #63b3ed;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+}
+
+.record__form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.record__button {
+  background: #007acc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  align-self: flex-start;
+}
+
+.record__button:hover:not(:disabled) {
+  background: #005fa3;
+}
+
+.record__button:active {
+  transform: scale(0.98);
+}
+
+.record__button:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+  background: #1a202c;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table tbody tr:hover {
+  background-color: #f7fafc;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.login {
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.login__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login__input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+}
+
+.login__input:focus {
+  outline: none;
+  border-color: #63b3ed;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+}
