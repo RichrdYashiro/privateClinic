@@ -8,10 +8,11 @@
   </head>
   <body>
     <%- include('components/header') %>
+
     <div class="container">
       <div class="login">
         <h1 class="login__title">Авторизация</h1>
-        <form class="login__form" action="/" method="post">
+        <form class="login__form" action="/" method="POST">
           <div class="login__item">
             <span class="login__sub-title">Электронная почта</span>
             <input class="login__input" name="email" type="email" required />
@@ -25,9 +26,7 @@
               required
             />
           </div>
-          <button class="record__button" type="submit" disabled="">
-            Отправить
-          </button>
+          <button class="record__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

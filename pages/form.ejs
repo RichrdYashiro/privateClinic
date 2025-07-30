@@ -12,30 +12,33 @@
       <h1>Запись к врачу</h1>
 
       <div class="record">
-        <form action="/" class="record__form" method="post">
+        <form action="/form" class="record__form" method="post">
           <div class="record__item">
-            <span class="record__lable">ФИО</span>
-            <input type="text" name="name" placeholder="Наше имя и фамилия" />
-          </div>
-          <div class="record__item">
-            <span class="record__lable">Номер телефона</span>
+            <span class="record__label">ФИО</span>
             <input
               type="text"
               name="name"
+              placeholder="Наше имя и фамилия"
+              required
+            />
+          </div>
+          <div class="record__item">
+            <span class="record__label">Номер телефона</span>
+            <input
+              type="text"
+              name="phone"
               placeholder="+7 (000) 000 00 00"
               required
             />
           </div>
           <div class="record__item">
-            <span class="record__lable">Опишите вашу проблему</span>
+            <span class="record__label">Опишите вашу проблему</span>
             <textarea
               name="message"
               placeholder="Расскажите о своей проблеме..."
             ></textarea>
           </div>
-          <button class="record__button" type="submit" disabled="">
-            Отправить
-          </button>
+          <button class="record__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
